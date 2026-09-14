@@ -68,7 +68,7 @@ const PORTFOLIO_DATA = {
       title: "Cyberverse",
       issuer: "Cyberverse Foundation",
       date: "2025",
-      image: "assets/cyber.jpeg",
+      image: "cyber.jpeg",
       imageAlt: "Full Stack Web Development Certificate",
       // Link to the specific project created for this certification:
 
@@ -78,7 +78,7 @@ const PORTFOLIO_DATA = {
       title: "UI/UX design",
       issuer: "Seshadripuram Degree college",
       date: "2025",
-      image: "assets/UI.jpeg",
+      image: "UI.jpeg",
       imageAlt: "UI/UX Design Certificate",
       // Link to the specific project created for this certification:
       projectLink: "https://www.figma.com/proto/3sh0eYn3FR8upEPeW4cDWV/Untitled?node-id=2-2&p=f&t=eITZmINJuuoqVgve-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
@@ -89,7 +89,7 @@ const PORTFOLIO_DATA = {
       title: "Ai tools workshop",
       issuer: "Be10x",
       date: "2026",
-      image: "assets/be10x.jpeg",
+      image: "be10x.jpeg",
       imageAlt: "Cloud Architecture and Scalable APIs Certificate",
       // Link to the specific project created for this certification:
     }
