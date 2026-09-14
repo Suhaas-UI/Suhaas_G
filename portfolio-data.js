@@ -26,7 +26,7 @@ const PORTFOLIO_DATA = {
     ],
 
     // Profile Picture (Using your uploaded photo in assets/profile.jpg)
-    profileImage: "assets/profile.jpg",
+    profileImage: "profile.jpg",
     profileImageAlt: "Profile Picture",
 
     // Your receiving email address for the pre-filled contact form
