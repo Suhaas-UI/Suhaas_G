@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio & Resume - Projects, Certificates, and Contact" />
+  <title>Alex Morgan | Personal Portfolio & Resume</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans for a clean, friendly, modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-logo" id="brand-logo-link">
+        <span class="brand-dot"></span>
+        <span id="nav-brand-name">Alex Morgan</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 1: HERO & ABOUT ME
+         (Left: Name & About Me; Right: Profile Picture)
+         ======================================================================== -->
+    <section class="hero-section" id="about">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- LEFT HAND SIDE: Name & About Me -->
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-indicator"></span>
+              <span id="hero-status-badge">Available for new opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span id="hero-name">Alex Morgan</span>
+            </h1>
+
+            <p class="hero-subtitle" id="hero-role">
+              Full-Stack Developer &amp; UI Enthusiast
+            </p>
+
+            <!-- About Me Box (Right under the name) -->
+            <div class="about-me-card">
+              <span class="about-me-label">About Me &amp; What I Aim For</span>
+              <div class="about-me-text" id="hero-about-me">
+                <!-- Dynamically populated from portfolio-data.js -->
+                <p>Hello! I'm a developer passionate about building clean, accessible, and high-impact web products. I
+                  enjoy turning complex ideas into simple, intuitive user experiences that people love to use.</p>
+                <p>My aim is to collaborate with creative teams, push the boundaries of modern web tech, and craft
+                  software solutions that make a meaningful difference.</p>
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">
+                Explore Projects
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17l10-10M17 17V7H7" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                Contact Me
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT HAND SIDE: Portrait with soft blurred background effect (similar to reference) -->
+          <div class="hero-portrait-wrapper">
+            <!-- Soft ambient blurred backdrop (matches blurry depth vibe from reference pic) -->
+            <div class="portrait-ambient-blur" id="portrait-blur-bg"
+              style="background-image: url('assets/profile.jpg');"></div>
+
+            <!-- Main Crisp Portrait Card -->
+            <div class="portrait-card">
+              <img src="assets/profile.jpg" alt="Profile Portrait" class="portrait-img" id="hero-pfp" loading="eager" />
+              <div class="portrait-badge">
+                <span class="status-indicator"></span>
+                <span>Available for hire</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: PROJECTS
+         (Project Name, Description, Tags, and Direct Product Link)
+         ======================================================================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            A selection of applications and digital products I've built.
+
+          </p>
+        </div>
+
+        <!-- Dynamic Projects Grid (Populated via portfolio-data.js) -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: CERTIFICATES
+         (Certificate image, Certificate Name under it, and Project Link below)
+         ======================================================================== -->
+    <section class="section" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Credentials</span>
+          <h2 class="section-title">Certificates &amp; Achievements</h2>
+          <p class="section-description">
+            Verified milestones and specializations.
+          </p>
+        </div>
+
+        <!-- Dynamic Certificates Grid (Populated via portfolio-data.js) -->
+        <div class="certificates-grid" id="certificates-container">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: CONTACT ME
+         (Contact Form + Social Media Links right underneath)
+         ======================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-description">
+            Have a question, Leave your name and message.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Contact Card -->
+          <div class="contact-card">
+            <form id="contact-form" novalidate>
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="What's your name?" required />
+              </div>
+
+              <!-- Description / Message Field -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Description / Reason for reaching out</label>
+                <textarea id="contact-message" class="form-textarea"
+                  placeholder="Share a few details on why you're reaching out or what you'd like to collaborate on..."
+                  required></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="form-submit-btn" id="contact-submit-btn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <!-- Inline Feedback Note -->
+              <div class="form-feedback" id="form-feedback" role="alert"></div>
+            </form>
+          </div>
+
+          <!-- ====================================================================
+               RIGHT UNDER SECTION 4: SOCIAL MEDIA PLATFORMS
+               (Links hidden inside brand logos & names)
+               ==================================================================== -->
+          <div class="socials-wrapper">
+            <h3 class="socials-title">Or Find Me Across the Web</h3>
+            <p class="socials-subtitle">Feel free to connect on my social channels</p>
+
+            <ul class="socials-list" id="socials-container">
+              <!-- Rendered dynamically by app.js -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="footer-year"></span> <span id="footer-name">Alex Morgan</span>. All rights reserved.</p>
+      <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top">
+        <span>Back to top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- EmailJS (must load before app.js since the contact form uses it) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("9jjEgv9IiibCn9iaS");
+  </script>
+
+  <!-- Scripts: Data configuration followed by the renderer application -->
+  <script src="portfolio-data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
